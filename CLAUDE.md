@@ -27,3 +27,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## アーキテクチャ
 
 コードベースがまだ存在しないため、アーキテクチャ情報は未記載。主要なディレクトリ構成やモジュール間の関係が固まった段階で、複数ファイルを跨ぐ設計判断(例: フロントエンド/バックエンドの分割、データフロー、認証方式など)を中心に記載すること。
+
+## デプロイ情報
+
+- 本番URL: https://realestate-app-wh9i.vercel.app/
+- Supabaseプロジェクト名: realestate-app
