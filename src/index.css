@@ -136,18 +136,50 @@ button {
   color: #6b7280;
 }
 
-.property-header button {
-  padding: 10px 18px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  background-color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-  color: #374151;
+.property-header-actions {
+  display: flex;
+  gap: 10px;
 }
 
-.property-header button:hover {
-  background-color: #f3f4f6;
+.property-header-actions button,
+.property-card-actions button {
+  padding: 10px 18px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background-color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.property-header-actions button:hover,
+.property-card-actions button:hover {
+  opacity: 0.9;
+}
+
+.property-header-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-secondary {
+  border: 1px solid #d1d5db !important;
+  background-color: #ffffff !important;
+  color: #374151 !important;
+}
+
+.button-secondary:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.button-danger {
+  border: 1px solid #fecaca !important;
+  background-color: #fef2f2 !important;
+  color: #b91c1c !important;
+}
+
+.button-danger:hover {
+  background-color: #fee2e2 !important;
 }
 
 .property-grid {
@@ -176,7 +208,61 @@ button {
 }
 
 .property-area {
-  margin: 0;
+  margin: 0 0 14px;
   font-size: 13px;
   color: #6b7280;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.property-card-actions button {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+/* 物件の新規登録・編集フォーム */
+.property-form {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  max-width: 420px;
+}
+
+.property-form h2 {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+.property-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.property-form-actions button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.property-form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.property-form-actions .button-secondary {
+  background-color: #ffffff !important;
+  border: 1px solid #d1d5db !important;
+  color: #374151 !important;
 }
